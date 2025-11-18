@@ -1,0 +1,30 @@
+@model BlogPost
+
+@{
+    ViewData["Title"] = "Yazıyı Sil";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="card border-danger shadow-sm">
+            <div class="card-body">
+                <h1 class="card-title text-danger mb-3">@ViewData["Title"]</h1>
+                <p>Bu yazıyı silmek istediğinize emin misiniz?</p>
+                <dl class="row">
+                    <dt class="col-sm-3">Başlık</dt>
+                    <dd class="col-sm-9">@Model.Title</dd>
+                    <dt class="col-sm-3">İçerik</dt>
+                    <dd class="col-sm-9" style="white-space: pre-line;">@Model.Content</dd>
+                </dl>
+                <form asp-action="Delete" method="post">
+                    <input type="hidden" asp-for="Id" />
+                    <div class="d-flex justify-content-between">
+                        <a asp-action="Index" class="btn btn-outline-secondary">Vazgeç</a>
+                        <button type="submit" class="btn btn-danger">Sil</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

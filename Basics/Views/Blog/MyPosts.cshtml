@@ -1,0 +1,39 @@
+@model IEnumerable<BlogPost>
+
+@{
+    ViewData["Title"] = "Yazılarım";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h1 class="display-6">@ViewData["Title"]</h1>
+        <p class="text-muted">Sana ait tüm blog yazıları.</p>
+    </div>
+    <a asp-action="Create" class="btn btn-primary">Yeni Yazı</a>
+</div>
+
+<div class="list-group">
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">Henüz bir yazı paylaşmadın.</div>
+    }
+    else
+    {
+        foreach (var post in Model)
+        {
+            <div class="list-group-item list-group-item-action mb-3 shadow-sm">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">@post.Title</h5>
+                    <small>@post.CreatedAt.ToLocalTime().ToString("dd MMM yyyy HH:mm")</small>
+                </div>
+                <p class="mb-1 text-truncate">@post.Content</p>
+                <div class="mt-2">
+                    <a asp-action="Details" asp-route-id="@post.Id" class="btn btn-link">Oku</a>
+                    <a asp-action="Edit" asp-route-id="@post.Id" class="btn btn-outline-secondary btn-sm">Düzenle</a>
+                    <a asp-action="Delete" asp-route-id="@post.Id" class="btn btn-outline-danger btn-sm">Sil</a>
+                </div>
+            </div>
+        }
+    }
+</div>
+

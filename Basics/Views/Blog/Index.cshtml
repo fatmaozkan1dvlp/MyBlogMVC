@@ -1,0 +1,52 @@
+@model IEnumerable<BlogPost>
+
+@{
+    ViewData["Title"] = "Blog";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <div>
+        <h1 class="display-6">Mini Blog</h1>
+        <p class="text-muted">Topluluk tarafından paylaşılan son yazılar.</p>
+    </div>
+    @if (User.Identity?.IsAuthenticated ?? false)
+    {
+        <div>
+            <a asp-action="MyPosts" class="btn btn-outline-secondary me-2">Yazılarım</a>
+            <a asp-action="Create" class="btn btn-primary">Yeni Yazı</a>
+        </div>
+    }
+    else
+    {
+        <a asp-controller="Account" asp-action="Login" class="btn btn-primary">Yazı Paylaş</a>
+    }
+</div>
+
+<div class="row g-4">
+    @if (!Model.Any())
+    {
+        <div class="col-12">
+            <div class="alert alert-info">Henüz yazı yok. İlk yazıyı sen oluştur!</div>
+        </div>
+    }
+    else
+    {
+        foreach (var post in Model)
+        {
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@post.Title</h5>
+                        <p class="card-text text-truncate" style="max-height: 4.5rem;">@post.Content</p>
+                        <p class="text-muted small mt-auto">
+                            @post.Author?.DisplayName ?? post.Author?.Email ?? "Anonim" •
+                            @post.CreatedAt.ToLocalTime().ToString("dd MMM yyyy HH:mm")
+                        </p>
+                        <a asp-action="Details" asp-route-id="@post.Id" class="stretched-link">Devamını Oku</a>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>
+

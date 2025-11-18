@@ -1,0 +1,40 @@
+@model BlogPost
+
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<div class="mb-4">
+    <a asp-action="Index" class="text-decoration-none">&larr; Tüm Yazılar</a>
+</div>
+
+<article class="card shadow-sm">
+    <div class="card-body">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+            <div>
+                <h1 class="card-title">@Model.Title</h1>
+                <p class="text-muted mb-0">
+                    @Model.Author?.DisplayName ?? Model.Author?.Email ?? "Anonim" •
+                    @Model.CreatedAt.ToLocalTime().ToString("dd MMM yyyy HH:mm")
+                    @if (Model.UpdatedAt.HasValue)
+                    {
+                        <span>(Güncellendi: @Model.UpdatedAt.Value.ToLocalTime().ToString("dd MMM yyyy HH:mm"))</span>
+                    }
+                </p>
+            </div>
+            @if (User.Identity?.IsAuthenticated ?? false)
+            {
+                <div class="btn-group">
+                    @if ((Model.AuthorId == User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value))
+                    {
+                        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-outline-secondary">Düzenle</a>
+                        <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-outline-danger">Sil</a>
+                    }
+                </div>
+            }
+        </div>
+        <hr />
+        <p class="lead" style="white-space: pre-line;">@Model.Content</p>
+    </div>
+</article>
+
