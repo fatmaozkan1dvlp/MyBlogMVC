@@ -39,7 +39,7 @@
                         <h5 class="card-title">@post.Title</h5>
                         <p class="card-text text-truncate" style="max-height: 4.5rem;">@post.Content</p>
                         <p class="text-muted small mt-auto">
-                            @post.Author?.DisplayName ?? post.Author?.Email ?? "Anonim" •
+                            @post.Author?.DisplayName 
                             @post.CreatedAt.ToLocalTime().ToString("dd MMM yyyy HH:mm")
                         </p>
                         <a asp-action="Details" asp-route-id="@post.Id" class="stretched-link">Devamını Oku</a>

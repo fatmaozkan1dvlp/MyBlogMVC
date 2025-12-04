@@ -30,6 +30,8 @@ public class BlogController(
     {
         var post = await _context.BlogPosts
             .Include(p => p.Author)
+            .Include(p => p.Comments)
+            .Include(p => p.Likes)
             .FirstOrDefaultAsync(p => p.Id == id);
 
         return post is null ? NotFound() : View(post);
@@ -178,6 +180,69 @@ public class BlogController(
     {
         var userId = _userManager.GetUserId(User);
         return userId is not null && post.AuthorId == userId;
+    }
+
+    [HttpPost]
+    [Authorize]
+    public async Task<IActionResult> AddComment(int PostId, string Text) // UserName parametresi kaldýrýldý
+    {
+        var currentUserName = User.Identity.Name;
+
+        if (string.IsNullOrWhiteSpace(currentUserName) || string.IsNullOrWhiteSpace(Text))
+        {
+            return RedirectToAction("Details", new { id = PostId });
+        }
+
+        var entity = new Comment
+        {
+            PostId = PostId,
+            UserName = currentUserName, // Giriþ yapan kullanýcý adý kullanýldý
+            Text = Text,
+            PublishedOn = DateTime.Now
+        };
+
+        _context.Comments.Add(entity);
+        await _context.SaveChangesAsync();
+
+        return RedirectToAction("Details", new { id = PostId });
+    }
+    [HttpPost]
+    [Authorize]
+    public async Task<IActionResult> ToggleLike(int PostId, string UserName)
+    {
+        var currentUserName = User.Identity.Name;
+
+        if (string.IsNullOrWhiteSpace(currentUserName))
+        {
+            return RedirectToPage("/Account/Login");
+        }
+
+        // 1. Kullanýcýnýn bu yazýyý daha önce beðenip beðenmediðini kontrol et.
+        var existingLike = await _context.Likes
+            .FirstOrDefaultAsync(l => l.PostId == PostId && l.UserName == UserName);
+
+        if (existingLike == null)
+        {
+            // (Like!)
+            var newLike = new Like
+            {
+                PostId = PostId,
+                UserName = UserName,
+                LikedOn = DateTime.Now
+            };
+            _context.Likes.Add(newLike);
+        }
+        else
+        {
+            // (Unlike!)
+            _context.Likes.Remove(existingLike);
+        }
+
+        // Deðiþiklikleri veritabanýna kaydet.
+        await _context.SaveChangesAsync();
+
+        // Ýþlem bitince kullanýcýyý tekrar yazýnýn olduðu sayfaya gönder.
+        return RedirectToAction("Details", new { id = PostId });
     }
 }
 

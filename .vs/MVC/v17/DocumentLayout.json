@@ -1,0 +1,191 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C4E32743-2D7B-2ECC-6276-ED7BF53ABE36}|Basics\\Basics.csproj|c:\\users\\fatma\\desktop\\projeler\\myblogmvc\\basics\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C4E32743-2D7B-2ECC-6276-ED7BF53ABE36}|Basics\\Basics.csproj|solutionrelative:basics\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4E32743-2D7B-2ECC-6276-ED7BF53ABE36}|Basics\\Basics.csproj|c:\\users\\fatma\\desktop\\projeler\\myblogmvc\\basics\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C4E32743-2D7B-2ECC-6276-ED7BF53ABE36}|Basics\\Basics.csproj|solutionrelative:basics\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4E32743-2D7B-2ECC-6276-ED7BF53ABE36}|Basics\\Basics.csproj|c:\\users\\fatma\\desktop\\projeler\\myblogmvc\\basics\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4E32743-2D7B-2ECC-6276-ED7BF53ABE36}|Basics\\Basics.csproj|solutionrelative:basics\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4E32743-2D7B-2ECC-6276-ED7BF53ABE36}|Basics\\Basics.csproj|c:\\users\\fatma\\desktop\\projeler\\myblogmvc\\basics\\views\\blog\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C4E32743-2D7B-2ECC-6276-ED7BF53ABE36}|Basics\\Basics.csproj|solutionrelative:basics\\views\\blog\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4E32743-2D7B-2ECC-6276-ED7BF53ABE36}|Basics\\Basics.csproj|c:\\users\\fatma\\desktop\\projeler\\myblogmvc\\basics\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4E32743-2D7B-2ECC-6276-ED7BF53ABE36}|Basics\\Basics.csproj|solutionrelative:basics\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4E32743-2D7B-2ECC-6276-ED7BF53ABE36}|Basics\\Basics.csproj|c:\\users\\fatma\\desktop\\projeler\\myblogmvc\\basics\\models\\like.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4E32743-2D7B-2ECC-6276-ED7BF53ABE36}|Basics\\Basics.csproj|solutionrelative:basics\\models\\like.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4E32743-2D7B-2ECC-6276-ED7BF53ABE36}|Basics\\Basics.csproj|c:\\users\\fatma\\desktop\\projeler\\myblogmvc\\basics\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4E32743-2D7B-2ECC-6276-ED7BF53ABE36}|Basics\\Basics.csproj|solutionrelative:basics\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4E32743-2D7B-2ECC-6276-ED7BF53ABE36}|Basics\\Basics.csproj|c:\\users\\fatma\\desktop\\projeler\\myblogmvc\\basics\\models\\blogpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4E32743-2D7B-2ECC-6276-ED7BF53ABE36}|Basics\\Basics.csproj|solutionrelative:basics\\models\\blogpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4E32743-2D7B-2ECC-6276-ED7BF53ABE36}|Basics\\Basics.csproj|c:\\users\\fatma\\desktop\\projeler\\myblogmvc\\basics\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4E32743-2D7B-2ECC-6276-ED7BF53ABE36}|Basics\\Basics.csproj|solutionrelative:basics\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4E32743-2D7B-2ECC-6276-ED7BF53ABE36}|Basics\\Basics.csproj|c:\\users\\fatma\\desktop\\projeler\\myblogmvc\\basics\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4E32743-2D7B-2ECC-6276-ED7BF53ABE36}|Basics\\Basics.csproj|solutionrelative:basics\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Views\\Blog\\Index.cshtml",
+              "RelativeDocumentMoniker": "Basics\\Views\\Blog\\Index.cshtml",
+              "ToolTip": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Views\\Blog\\Index.cshtml",
+              "RelativeToolTip": "Basics\\Views\\Blog\\Index.cshtml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAACkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-04T17:10:50.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Basics\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Basics\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-04T16:52:20.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Basics\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Basics\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T16:40:32.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Program.cs",
+              "RelativeDocumentMoniker": "Basics\\Program.cs",
+              "ToolTip": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Program.cs",
+              "RelativeToolTip": "Basics\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T19:51:22.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Like.cs",
+              "DocumentMoniker": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Models\\Like.cs",
+              "RelativeDocumentMoniker": "Basics\\Models\\Like.cs",
+              "ToolTip": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Models\\Like.cs",
+              "RelativeToolTip": "Basics\\Models\\Like.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T19:40:20.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Views\\Blog\\Details.cshtml",
+              "RelativeDocumentMoniker": "Basics\\Views\\Blog\\Details.cshtml",
+              "ToolTip": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Views\\Blog\\Details.cshtml",
+              "RelativeToolTip": "Basics\\Views\\Blog\\Details.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAmwEkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-03T19:16:27.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BlogController.cs",
+              "DocumentMoniker": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Controllers\\BlogController.cs",
+              "RelativeDocumentMoniker": "Basics\\Controllers\\BlogController.cs",
+              "ToolTip": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Controllers\\BlogController.cs",
+              "RelativeToolTip": "Basics\\Controllers\\BlogController.cs",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAAANYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T19:08:16.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BlogPost.cs",
+              "DocumentMoniker": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Models\\BlogPost.cs",
+              "RelativeDocumentMoniker": "Basics\\Models\\BlogPost.cs",
+              "ToolTip": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Models\\BlogPost.cs",
+              "RelativeToolTip": "Basics\\Models\\BlogPost.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAABgAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T19:00:25.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Models\\Comment.cs",
+              "RelativeDocumentMoniker": "Basics\\Models\\Comment.cs",
+              "ToolTip": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Models\\Comment.cs",
+              "RelativeToolTip": "Basics\\Models\\Comment.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T18:57:23.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Basics\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Basics\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T18:23:10.584Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

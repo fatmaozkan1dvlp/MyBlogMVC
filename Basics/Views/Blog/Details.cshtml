@@ -1,3 +1,4 @@
+@using Microsoft.AspNetCore.Identity
 @model BlogPost
 
 @{
@@ -37,4 +38,60 @@
         <p class="lead" style="white-space: pre-line;">@Model.Content</p>
     </div>
 </article>
+
+@{
+    bool isSignedIn = User.Identity.IsAuthenticated;
+    string currentUserName = User.Identity.Name ?? string.Empty;
+    int likeCount = Model.Likes.Count;
+    bool userLiked = Model.Likes.Any(l => l.UserName == currentUserName);
+
+    // YENİ EKLENEN/GÜNCELLENEN KISIM: İkon Sınıfını Belirleme
+    string heartIconClass = userLiked ? "fa-solid fa-heart text-danger" : "fa-regular fa-heart";
+    string likeButtonClass = userLiked ? "btn-danger" : "btn-outline-danger";
+}
+
+<div class="my-3">
+    <span class="badge bg-light text-dark border border-secondary p-2">
+        <i class="@heartIconClass"></i> @likeCount Beğeni
+    </span>
+
+    @if (isSignedIn) // Sadece giriş yapan kullanıcılara butonu göster
+    {
+        <form action="/Blog/ToggleLike" method="post" class="d-inline">
+            <input type="hidden" name="PostId" value="@Model.Id" />
+
+            <button type="submit" class="btn btn-sm @likeButtonClass ms-2">
+
+                <i class="@heartIconClass"></i>
+
+            </button>
+        </form>
+    }
+    else
+    {
+        <span class="text-muted ms-2">Beğenmek için giriş yapmalısınız.</span>
+    }
+</div>
+
+
+<hr />
+<div class="card my-4">
+    <h5 class="card-header">Yorum Yaz:</h5>
+    <div class="card-body">
+        
+    </div>
+</div>
+
+
+<h3>Yorumlar (@Model.Comments.Count)</h3>
+@foreach (var comment in Model.Comments)
+{
+    <div class="card mb-2">
+        <div class="card-body">
+            <h5 class="card-title">@comment.UserName</h5>
+            <h6 class="card-subtitle mb-2 text-muted">@comment.PublishedOn.ToString("dd.MM.yyyy HH:mm")</h6>
+            <p class="card-text">@comment.Text</p>
+        </div>
+    </div>
+}
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fatma\\Desktop\\MVC\\Basics\\Basics.csproj": {}
+    "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Basics.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fatma\\Desktop\\MVC\\Basics\\Basics.csproj": {
+    "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Basics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fatma\\Desktop\\MVC\\Basics\\Basics.csproj",
+        "projectUniqueName": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Basics.csproj",
         "projectName": "Basics",
-        "projectPath": "C:\\Users\\fatma\\Desktop\\MVC\\Basics\\Basics.csproj",
+        "projectPath": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Basics.csproj",
         "packagesPath": "C:\\Users\\fatma\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fatma\\Desktop\\MVC\\Basics\\obj\\",
+        "outputPath": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -55,6 +55,12 @@
               "version": "[9.0.0, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.0, )"
             },

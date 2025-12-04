@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JxWPMS7aG+M=",
+  "dgSpecHash": "xzFwiBYH3MQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\fatma\\Desktop\\MVC\\Basics\\Basics.csproj",
+  "projectFilePath": "C:\\Users\\fatma\\Desktop\\PROJELER\\MyBlogMVC\\Basics\\Basics.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\fatma\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\fatma\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

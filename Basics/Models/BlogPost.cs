@@ -21,5 +21,7 @@ public class BlogPost
     public string AuthorId { get; set; } = string.Empty;
 
     public ApplicationUser? Author { get; set; }
+    public ICollection<Comment> Comments { get; set; } = new List<Comment>();
+    public ICollection<Like> Likes { get; set; } = new List<Like>();
 }
 
